@@ -1,1 +1,5 @@
-Details about this assignment can be found [on the course webpage](http://cs231n.github.io/), under Assignment #1 of Winter 2016.
+This is a pet project, that I did for a course on my university.
+
+The project is inspired from Stanford's CS231 first assignment. While the assignment there requires to only build a 2 layer fully connected ANN, on this project I did more than that. I added different optimizers in addition to stochastic gradient descent (momentum, Nesterov's momentum, Adagrad, RMSProp, Adam), added dropout regularizer, built a 3 layer ANN, and used random search for tuning the hyperparameters instead of the grid search. However, the biggest change I made was to add the option of using SVM's loss function in the final layer, instead of the cross-entropy loss.
+
+The results were quite good. The best accuracy results I got on CIFAR-10 dataset were 0.5611, which would have given me 4-5 extra points on that assignment (there was one extra point for any percentage point above 0.52). However, the best results I got were using Softmax loss instead of the SVM loss. Who would have thought that using the function everyone uses is a good idea?! :p
